@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "farlandsreborn",
+	"version": "${version}",
+	"name": "Farlands Reborn",
+	"description": "Re-adds the farlands into modern versions of minecraft by undoing anti-farland patches.",
+	"authors": [
+		"AdyTech99"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/farlandsreborn/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.adytechmc.farlandsreborn.FarlandsRebornMod"
+		],
+		"fabric-datagen": [
+          "com.adytechmc.farlandsreborn.FarlandsRebornDataGenerator"
+		]
+	},
+	"mixins": [
+		"farlandsreborn.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.20",
+		"minecraft": "~1.20",
+		"java": ">=17"
+
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
